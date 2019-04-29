@@ -88,7 +88,7 @@ rm -f get-pip.py
 
 # HACK: Because the office internet was blocking archive.ubuntu.com...
 # So we use a mirror for packages.
-RUN sed -i 's#archive.ubuntu.com/ubuntu#mozart.ee.ic.ac.uk/ubuntu-archive#g' /etc/apt/sources.list
+RUN sed -i 's#archive.ubuntu.com/ubuntu#mirrors.ukfast.co.uk/sites/archive.ubuntu.com#g' /etc/apt/sources.list
 
 ######### Install Dlib start
 RUN apt update && apt install -y software-properties-common
